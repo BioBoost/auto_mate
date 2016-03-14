@@ -31,14 +31,14 @@ else
     sudo resize2fs /dev/mmcblk0p2
     echo "DONE" > .racing_robots
 
-    # Install some packages
-    sudo apt-get update
-    sudo apt-get -y install git
-
     # Create some users
     sudo adduser --quiet --disabled-password -shell /bin/bash --home /home/racing --gecos "Racing Robots" racing
     echo -e 'robots\nrobots\n' | sudo passwd racing
   fi
+
+  # Install some packages
+  sudo apt-get update
+  sudo apt-get -y install git aptitude
 fi
 
 echo "Done"
