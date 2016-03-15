@@ -1,13 +1,7 @@
 #!/usr/bin/env bash
 
-# This script should NOT be ran as root
-if [[ $EUID -eq 0 ]]; then
-  echo "You must not run this as root user" 2>&1
-  exit 1
-fi
-
 # Resize the filesystem if '~/.racing_robots does not exist'
-cd
+cd /auto_mate
 if [ ! -f .racing_robots ]; then
 echo "Resizing filesystem ..."
 sudo fdisk /dev/mmcblk0 <<EOF
@@ -20,7 +14,6 @@ p
 
 w
 EOF
-cd
 touch .racing_robots
 echo "NEEDS_RESIZE" > .racing_robots
 sudo reboot
