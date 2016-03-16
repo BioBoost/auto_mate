@@ -38,6 +38,12 @@ else
   # Install some packages
   apt-get update
   apt-get -y install git aptitude
+
+  # Clone presentation to racing robots desktop
+  cd /home/racing/
+  git clone http://git.labict.be/twin_racing_robots/presentation.git
+  ln -s /home/racing/presentation/index.html /home/racing/Desktop/RacingRobots.html
+
 fi
 
 echo "Done"
