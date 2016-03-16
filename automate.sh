@@ -41,7 +41,7 @@ else
 
   # Clone presentation to racing robots desktop
   cd /home/racing/
-  git clone http://git.labict.be/twin_racing_robots/presentation.git
+  git clone git@git.labict.be:twin_racing_robots/presentation.git
   ln -s /home/racing/presentation/index.html /home/racing/Desktop/RacingRobots.html
 
 fi
