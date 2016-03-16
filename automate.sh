@@ -41,6 +41,7 @@ else
 
   # Clone presentation to racing robots desktop
   cd /home/racing/
+  mkdir Desktop
   git clone https://github.com/BioBoost/twin_presentation.git
   ln -s /home/racing/twin_presentation/index.html /home/racing/Desktop/RacingRobots.html
 
