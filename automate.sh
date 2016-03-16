@@ -42,7 +42,7 @@ else
   # Clone presentation to racing robots desktop
   cd /home/racing/
   git clone https://github.com/BioBoost/twin_presentation.git
-  ln -s /home/racing/presentation/index.html /home/racing/Desktop/RacingRobots.html
+  ln -s /home/racing/twin_presentation/index.html /home/racing/Desktop/RacingRobots.html
 
 fi
 
