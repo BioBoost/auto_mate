@@ -49,6 +49,8 @@ else
     cd twin_presentation
     git pull
   fi
+  # Make sure Desktop dir is owner by racing user
+  chown racing:racing /home/racing/Desktop
 fi
 
 echo "Done"
